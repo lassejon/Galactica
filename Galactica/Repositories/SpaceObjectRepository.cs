@@ -14,7 +14,7 @@ public static class SpaceObjectRepository
         PlanetType = PlanetType.Terrestial,
         RevolutionPeriodInDays = 88,
         RotationPeriodInHours = 1408,
-        Position = new Position(1, 0),
+        Position = new SpaceObject.Pos(1, 0),
     };
 
     private static readonly Planet Venus = new ()
@@ -25,7 +25,7 @@ public static class SpaceObjectRepository
         PlanetType = PlanetType.Terrestial,
         RevolutionPeriodInDays = 225,
         RotationPeriodInHours = 5832,
-        Position = new Position(2, 0),
+        Position = new SpaceObject.Pos(2, 0),
     };
     
     private static readonly Moon Luna = new ()
@@ -35,7 +35,7 @@ public static class SpaceObjectRepository
         DiameterInMeters = 3474800,
         PlanetType = PlanetType.Dwarf,
         RevolutionPeriodInDays = 27,
-        Position = new Position(3, 1),
+        Position = new SpaceObject.Pos(3, 1),
     };
 
     private static readonly Planet Earth = 
@@ -47,7 +47,7 @@ public static class SpaceObjectRepository
         PlanetType = PlanetType.Terrestial,
         RevolutionPeriodInDays = 365,
         RotationPeriodInHours = 24,
-        Position = new Position(3, 0),
+        Position = new SpaceObject.Pos(3, 0),
     };
     
     
@@ -58,7 +58,7 @@ public static class SpaceObjectRepository
         DiameterInMeters = 22533000,
         PlanetType = PlanetType.Terrestial,
         RevolutionPeriodInDays = 0.334,
-        Position = new Position(4, 1),
+        Position = new SpaceObject.Pos(4, 1),
     };
     
     private static readonly Moon Deimos = new ()
@@ -68,7 +68,7 @@ public static class SpaceObjectRepository
         DiameterInMeters = 12400,
         PlanetType = PlanetType.Terrestial,
         RevolutionPeriodInDays = 1.25,
-        Position = new Position(4, 2),
+        Position = new SpaceObject.Pos(4, 2),
     };
 
     private static readonly Planet Mars = 
@@ -80,7 +80,7 @@ public static class SpaceObjectRepository
         PlanetType = PlanetType.Terrestial,
         RevolutionPeriodInDays = 687,
         RotationPeriodInHours = 24.7,
-        Position = new Position(4, 0),
+        Position = new SpaceObject.Pos(4, 0),
     };
     
     
@@ -91,7 +91,7 @@ public static class SpaceObjectRepository
         DiameterInMeters = 3643200,
         PlanetType = PlanetType.Terrestial,
         RevolutionPeriodInDays = 3.5,
-        Position = new Position(5, 1),
+        Position = new SpaceObject.Pos(5, 1),
     };
     
     private static readonly Moon Europe = new ()
@@ -101,7 +101,7 @@ public static class SpaceObjectRepository
         DiameterInMeters = 3121600,
         PlanetType = PlanetType.Terrestial,
         RevolutionPeriodInDays = 1.75,
-        Position = new Position(5, 2),
+        Position = new SpaceObject.Pos(5, 2),
     };
     
     private static readonly Moon Ganymede = new ()
@@ -111,7 +111,7 @@ public static class SpaceObjectRepository
         DiameterInMeters = 5268200,
         PlanetType = PlanetType.Terrestial,
         RevolutionPeriodInDays = 7.167,
-        Position = new Position(5, 5),
+        Position = new SpaceObject.Pos(5, 5),
     };
 
     private static readonly Planet Jupiter = 
@@ -123,7 +123,7 @@ public static class SpaceObjectRepository
         PlanetType = PlanetType.Gas_Giant,
         RevolutionPeriodInDays = 4380,
         RotationPeriodInHours = 9.925,
-        Position = new Position(5, 0),
+        Position = new SpaceObject.Pos(5, 0),
     };
     
     
@@ -134,7 +134,7 @@ public static class SpaceObjectRepository
         DiameterInMeters = 6149500,
         PlanetType = PlanetType.Terrestial,
         RevolutionPeriodInDays = 16,
-        Position = new Position(6, 1),
+        Position = new SpaceObject.Pos(6, 1),
     };
     
     private static readonly Moon Mimas = new ()
@@ -144,7 +144,7 @@ public static class SpaceObjectRepository
         DiameterInMeters = 396400,
         PlanetType = PlanetType.Terrestial,
         RevolutionPeriodInDays = 0.9583,
-        Position = new Position(6, 2),
+        Position = new SpaceObject.Pos(6, 2),
     };
 
     private static readonly Planet Saturn = 
@@ -156,7 +156,7 @@ public static class SpaceObjectRepository
         PlanetType = PlanetType.Gas_Giant,
         RevolutionPeriodInDays = 10585,
         RotationPeriodInHours = 10.7,
-        Position = new Position(6, 0),
+        Position = new SpaceObject.Pos(6, 0),
     };
 
     private static readonly Planet Uranus = new ()
@@ -167,7 +167,7 @@ public static class SpaceObjectRepository
         PlanetType = PlanetType.Giant,
         RevolutionPeriodInDays = 30660,
         RotationPeriodInHours = 17,
-        Position = new Position(7, 0),
+        Position = new SpaceObject.Pos(7, 0),
     };
 
     private static readonly Planet Neptun = new ()
@@ -178,7 +178,7 @@ public static class SpaceObjectRepository
         PlanetType = PlanetType.Giant,
         RevolutionPeriodInDays = 60225,
         RotationPeriodInHours = 16,
-        Position = new Position(8, 0),
+        Position = new SpaceObject.Pos(8, 0),
     };
 
     private static readonly Planet Pluto = new ()
@@ -189,7 +189,7 @@ public static class SpaceObjectRepository
         PlanetType = PlanetType.Dwarf,
         RevolutionPeriodInDays = 90520,
         RotationPeriodInHours = 153,
-        Position = new Position(9, 0),
+        Position = new SpaceObject.Pos(9, 0),
     };
     
     public static Star Sun { get; } = 
@@ -210,7 +210,7 @@ public static class SpaceObjectRepository
     {
         Name = "Sun",
         Id = 0,
-        Position = new Position(0, 0),
+        Position = new SpaceObject.Pos(0, 0),
         TemperatureInKelvin = 5778,
         Type = StarType.YellowDwarf,
     };

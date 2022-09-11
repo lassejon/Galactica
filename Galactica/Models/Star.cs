@@ -6,7 +6,9 @@ namespace Galactica.Models;
 
 public class Star : SpaceObject
 {
-    public new Position? Position { get; init; } = new(0, 0);
+    public override Pos Position { get; set; } = new(0, 0);
+    // Line below can be used to hide base implementation instead of virtual/override keywords
+    // public new Pos? Position { get; init; } = new(0, 0);
     public StarType Type { get; set; }
     public double TemperatureInKelvin { get; set; }
     public List<Planet>? Planets { get; set; }
