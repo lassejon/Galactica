@@ -1,0 +1,3 @@
+﻿using Galactica;
+
+Startup.Start();
